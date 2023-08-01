@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;500;900&display=swap');
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+/* NAV DE LA PAGINA */
+
+.Container{
+    position: fixed;
+    display: flex;
+    background-color: black;
+    z-index: 2;
+    justify-content: space-between;
+    height: 85px;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.logo img{
+    height: 70px;
+    transition: all 0,3s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.nav_links{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Alien AI', sans-serif;
+                                                
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.nav_links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.Nav-Icons{
+    list-style: none;
+    justify-content: space-around;
+    margin: 10px 30px;
+    margin-left: 40px;
+}
+
+.Nav-Icons a{
+    margin-left: 20px;
+    background-color: blue;
+    color: blue;
+    font-size: 30px;
+    
+}
+
+/* HERO DE LA PAGINA */
+
+.hero h1{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Alien AI', sans-serif;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: 0;
+}
+
+/* SECCION DE GALERIA DE IMAGENES */
+
+.galeria{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 60px 0;
+    margin-top: 300px;
+    z-index: 1;
+}
+
+.galeria_titulo{
+    font-family: 'Alien AI', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.galeria_contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galeria_foto{
+    min-width: 200px;
+    flex: 350px;
+    object-fit: contain;
+}
+
+.galeria_imagen{
+    width: 100%;
+    height: 100%;
+}
+
+/* SECCION DE VIDEOS */
+
+.video_titulo{
+    font-family: 'Alien AI', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.video_contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_logo{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.footer_redes, .footer_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.redes_iconos{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(../assets/icons8-facebook-50.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    margin: 2rem;
+    background-color: antiquewhite;
+}
+
+.redes_iconos:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.redes_iconos:nth-of-type(2){
+    background-image: url(../assets/icons8-instagram-50.png);
+}
+
+.redes_iconos:nth-of-type(3){
+    background-image: url(../assets/icons8-youtube-50.png);
+}
+
+.redes_iconos:nth-of-type(4){
+    background-image: url(../assets/icons8-whatsapp-50.png);
+}
+
+
+
+.footer_menu{
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer_terminos{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    text-decoration: none;
+    color: white;
+}
+
+.footer_terminos:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: white;
+    opacity: 0.3;
+    text-align: center;
+}
